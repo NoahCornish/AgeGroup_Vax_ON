@@ -65,7 +65,7 @@ plot_fd
 plot_sd <- ggplot(data = PHUvaccine_data_5_11, 
                   aes(y = reorder(`Public Health Unit`, TwoDosePercent), x = TwoDosePercent, fill = -TwoDosePercent)) +
   geom_bar(stat = "identity") +
-  xlab("Fully Vaccinated") + ylab("Public Health Unit") +
+  xlab("Fully Vaccinated Percentage") + ylab("Public Health Unit") +
   expand_limits(x = c(0,100))+
   labs(title = "Percentage of children aged 5 to 11 that are fully vaccinated by Public Health Unit",
        subtitle = "As of Jan 27th, 2022",
